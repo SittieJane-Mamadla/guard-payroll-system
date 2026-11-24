@@ -1,7 +1,3 @@
-# payroll.py
-# This module checks the user's input and does the calculations.
-# It does not read or write any files.
-
 
 def validate_guard(name, post, rate_text):
     # Checks the guard details and returns a tuple: (name, post, rate)
