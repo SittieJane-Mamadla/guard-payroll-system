@@ -1,9 +1,10 @@
 # CS 26 Exam 2 – Technical Documentation
 
 **Student:** Sittie Jane Mamadla
-**Program:** Security Guard Attendance and Salary System (Guard Management and Payroll)
-**Status of project:** Work in progress.
 
+**Program:** Security Guard Attendance and Salary System (Guard Management and Payroll)
+
+**Status of project:** Work in progress. This report documents what is implemented now and what is planned.
 ---
 
 ## A. Program Title and Overview
@@ -23,11 +24,13 @@ The current version runs in the terminal (`python main.py`) and saves data in pl
 Security agencies track guard attendance and salary by hand or in notebooks. This causes mistakes: wrong hour counts, missing shifts, and slow payroll computation. The program is needed to record the data once, validate it, and compute the pay automatically and consistently.
 
 ### Inputs
+
 - Guard details: name, post, hourly rate
 - Shift details: guard ID, date (`YYYY-MM-DD`), time in (`HH:MM`), time out (`HH:MM`)
 - Menu choices typed by the user
 
 ### Processing
+
 - Validate all input (empty values, commas, wrong formats, impossible times, unknown guard ID)
 - Generate the next guard ID
 - Convert times to decimal hours and compute hours worked: `time out - time in`
@@ -35,6 +38,7 @@ Security agencies track guard attendance and salary by hand or in notebooks. Thi
 - Add up total shifts, total hours, and total pay
 
 ### Outputs
+
 - Tables of guards and shifts shown on screen
 - Messages such as `Guard saved.` or `Error: ...`
 - A payroll report file, `payroll_report.txt`
@@ -58,6 +62,7 @@ The project has five objectives. The status column shows how far each one has pr
 ## D. Program Requirements and Features
 
 ### Implemented features
+
 - Menu-driven program with a loop (`while True`)
 - Add a guard with validation, and automatic ID numbering
 - View all guards in an aligned table
@@ -68,12 +73,14 @@ The project has five objectives. The status column shows how far each one has pr
 - Data persists between runs (stored in text files)
 
 ### Planned enhancements
+
 - Replace text files with a database (guards and shifts tables)
 - Regular and overtime hours (for example, first 8 hours regular)
 - Deductions stored in a dictionary, and net pay
 - Tkinter interface with a payslip view and payroll summary table
 
 ### Assumptions and limitations
+
 - A shift cannot cross midnight (time out must be later than time in).
 - Names and posts cannot contain commas, because commas separate the fields in the text files.
 - The date check only tests the format and that the month is 1–12 and the day is 1–31. It does not check the number of days in each month (see Section J, Debugging).
