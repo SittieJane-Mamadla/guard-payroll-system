@@ -1,7 +1,4 @@
-# storage.py
-# This module does all the reading and writing of files.
-# Later, when we learn databases, we can replace this module
-# with a database module that has the same function names.
+
 
 GUARDS_FILE = "guards.txt"
 SHIFTS_FILE = "shifts.txt"
