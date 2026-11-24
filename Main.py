@@ -1,6 +1,4 @@
-# main.py
-# The menu of the Guard Management and Payroll program.
-# To run it:  python main.py
+
 import storage
 import payroll
 
